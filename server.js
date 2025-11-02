@@ -17,7 +17,7 @@ app.use(express.json()); // Allow the server to understand JSON (how we send mes
 // Get your API key from Render's "Environment Variables"
 const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
 // --- NEW ---
-const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash"});
+const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash"});
 
 // --- 5. The Chat Endpoint ---
 // This is the URL your frontend will 'fetch'
